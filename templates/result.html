@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Details</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+</head>
+
+<body>
+
+    <div class="result-container">
+
+        <div class="poster">
+
+            <img src="{{ image }}" alt="Movie Poster">
+
+        </div>
+
+        <div class="movie-details">
+
+            <h1>{{ movie }}</h1>
+
+            <div class="info">
+                <span>⭐ IMDb Rating</span>
+                <p>{{ rating }}</p>
+            </div>
+
+            <div class="info">
+                <span>📅 Release Date</span>
+                <p>{{ release }}</p>
+            </div>
+
+            <div class="info">
+                <span>🎭 Actors</span>
+                <p>{{ actor1 }}, {{ actor2 }}, {{ actor3 }}</p>
+            </div>
+
+            <div class="info">
+                <span>🎬 Genre</span>
+                <p>{{ genre }}</p>
+            </div>
+
+            <div class="info">
+                <span>📝 Plot</span>
+                <p>{{ plot }}</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

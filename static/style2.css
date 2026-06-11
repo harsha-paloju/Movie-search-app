@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body{
+
+    font-family: "Poppins", sans-serif;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("movie-bg.jpg");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 40px;
+
+}
+
+/* Main Card */
+
+.result-container{
+
+    width: 1100px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 40px;
+
+    background: rgba(15,15,15,0.82);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow: 0px 10px 35px rgba(0,0,0,0.5);
+
+}
+
+/* Poster */
+
+.poster{
+
+    flex-shrink: 0;
+
+}
+
+.poster img{
+
+    width: 320px;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.4);
+
+}
+
+.poster img:hover{
+
+    transform: scale(1.02);
+
+}
+
+/* Movie Details */
+
+.movie-details{
+
+    flex: 1;
+
+}
+
+/* Movie Title */
+
+.movie-details h1{
+
+    font-size: 58px;
+
+    font-weight: 700;
+
+    color: #ffffff;
+
+    margin-bottom: 35px;
+
+    letter-spacing: 1px;
+
+}
+
+/* Individual Info Block */
+
+.info{
+
+    margin-bottom: 28px;
+
+}
+
+/* Heading */
+
+.info span{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    color: #d1d5db;
+
+    margin-bottom: 8px;
+
+}
+
+/* Text */
+
+.info p{
+
+    color: #f3f4f6;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    font-weight: 400;
+
+}
+
+/* Plot */
+
+.info:last-child p{
+
+    text-align: justify;
+
+}
+
+/* Optional subtle divider */
+
+.info:not(:last-child){
+
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+
+}
+
+/* Responsive */
+
+@media(max-width:950px){
+
+    .result-container{
+
+        flex-direction: column;
+
+        width: 95%;
+
+        text-align: center;
+
+    }
+
+    .poster img{
+
+        width: 260px;
+
+    }
+
+    .movie-details h1{
+
+        font-size: 42px;
+
+    }
+
+    .info span{
+
+        justify-content: center;
+
+    }
+
+    .info p{
+
+        font-size: 18px;
+
+    }
+
+}
